@@ -1,0 +1,18 @@
+2025-04-09T19:50:18.513932+05:30 kali sudo:    kalar : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log
+2025-04-09T19:53:12.258888+05:30 kali sshd-session[5877]: Invalid user invaliduser from ::1 port 43758
+2025-04-09T19:53:13.250995+05:30 kali sshd-session[5877]: pam_unix(sshd:auth): check pass; user unknown
+2025-04-09T19:53:13.251301+05:30 kali sshd-session[5877]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2025-04-09T19:53:13.256069+05:30 kali sshd-session[5877]: pam_winbind(sshd:auth): getting password (0x00000388)
+2025-04-09T19:53:13.257231+05:30 kali sshd-session[5877]: pam_winbind(sshd:auth): pam_get_item returned a password
+2025-04-09T19:53:15.432478+05:30 kali sshd-session[5877]: Failed password for invalid user invaliduser from ::1 port 43758 ssh2
+2025-04-09T19:53:17.825074+05:30 kali sshd-session[5877]: pam_unix(sshd:auth): check pass; user unknown
+2025-04-09T19:53:17.828631+05:30 kali sshd-session[5877]: pam_winbind(sshd:auth): getting password (0x00000388)
+2025-04-09T19:53:17.829987+05:30 kali sshd-session[5877]: pam_winbind(sshd:auth): pam_get_item returned a password
+2025-04-09T19:53:19.552743+05:30 kali sshd-session[5877]: Failed password for invalid user invaliduser from ::1 port 43758 ssh2
+2025-04-09T19:53:22.279833+05:30 kali sshd-session[5877]: pam_unix(sshd:auth): check pass; user unknown
+2025-04-09T19:53:22.283109+05:30 kali sshd-session[5877]: pam_winbind(sshd:auth): getting password (0x00000388)
+2025-04-09T19:53:22.283241+05:30 kali sshd-session[5877]: pam_winbind(sshd:auth): pam_get_item returned a password
+2025-04-09T19:53:24.698224+05:30 kali sshd-session[5877]: Failed password for invalid user invaliduser from ::1 port 43758 ssh2
+2025-04-09T19:53:25.725114+05:30 kali sshd-session[5877]: Connection closed by invalid user invaliduser ::1 port 43758 [preauth]
+2025-04-09T19:53:25.725368+05:30 kali sshd-session[5877]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2025-04-09T19:54:35.168569+05:30 kali sudo:    kalar : TTY=pts/0 ; PWD=/home/kalar/malware_lab ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log
