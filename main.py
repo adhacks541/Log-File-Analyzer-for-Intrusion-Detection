@@ -13,7 +13,7 @@ logging.basicConfig(
 )
 
 # Define paths to scripts
-SCRIPTS_DIR = os.path.expanduser("~/log-analyzer/scripts")
+SCRIPTS_DIR = os.path.expanduser("scripts")
 SCRIPTS_SEQUENCE = [
     "parse_logs.py",                  # Step 1: Parse SSH logs
     "parse_apache_access.py",         # Step 2: Parse Apache logs (moved earlier)
@@ -23,7 +23,7 @@ SCRIPTS_SEQUENCE = [
     "generate_report.py"              # Step 6: Generate final report
 ]
 
-DASHBOARD_PATH = os.path.expanduser("~/log-analyzer/dashboard/dashboard.py")
+DASHBOARD_PATH = os.path.expanduser("dashboard\dashboard.py")
 LIVE_MONITOR_SCRIPT = os.path.join(SCRIPTS_DIR, "live_monitor.py")
 
 def run_script(script_name):
