@@ -38,14 +38,14 @@ def run_script(script_name):
     logging.info(f"Running {script_name}...")
 
     try:
-        result = subprocess.run(["python3", script_path], check=True)
+        result = subprocess.run(["python3", script_path], check=True,capture_output=True,text=True)
         print(f"[+] {script_name} completed successfully.")
         logging.info(f"{script_name} completed successfully.")
         return True
     except subprocess.CalledProcessError as e:
         print(f"[!] {script_name} failed with return code {e.returncode}.")
         logging.error(f"{script_name} failed with return code {e.returncode}.")
-        sys.exit(1)
+        print("ERROR:" ,e.stderr)
 
 def start_live_monitoring():
     """Start live monitoring script in the background."""
